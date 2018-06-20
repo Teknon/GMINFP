@@ -41,7 +41,36 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "c6b35657-3514-4571-afdb-a70e5f913ed7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "Kante",
+            "varType": 3
+        },
+        {
+            "id": "05cccfa8-0320-431a-836e-f91211411494",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "amBoden",
+            "varType": 3
+        }
+    ],
     "solid": false,
     "spriteId": "da322582-65a6-4a61-8ef5-212694a411bf",
     "visible": true

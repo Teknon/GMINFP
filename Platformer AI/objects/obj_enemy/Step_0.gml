@@ -1,5 +1,11 @@
 vsp = vsp + grv;
 
+//Nicht über Kanten laufen
+if (amBoden) && (Kante) && (!place_meeting(x+hsp,y+1,obj_Wall))
+{
+	hsp = -hsp;
+
+}
 
 //Kollisionscheck horizontal
 if (place_meeting(x+hsp,y,obj_Wall))
@@ -25,3 +31,20 @@ if (place_meeting(x,y+vsp,obj_Wall))
 
 y = y + vsp;
 
+//Check, ob man am Boden ist
+if (!place_meeting(x,y+1,obj_Wall))
+{
+	amBoden = false	
+}
+else
+{
+	amBoden = true
+}
+
+//Gegner chased Player
+if distance_to_object(obj_player)<=50{    
+      if (collision_line(x,y,obj_player.x,obj_player.y,obj_Wall,true,true) = noone) {
+           direction=point_direction(x,y,obj_player.x,obj_player.y);
+           speed= 1;
+    }
+}
